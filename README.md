@@ -1,4 +1,4 @@
-# React Provided
+# react-provided
 
 A dead simple dependency injection library for React inspired by Recoil.
 
