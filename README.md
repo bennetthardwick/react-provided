@@ -4,6 +4,8 @@ A dead simple dependency injection library for React inspired by Recoil.
 
 ## Usage
 
+![image showing layers of providers grouping different dependencies](.assets/api-graphic.png)
+
 First create a "provider layer" by using the `Provider` component.
 
 The `Provider` component has a setup function with a couple of useful methods:
