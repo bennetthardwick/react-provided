@@ -140,8 +140,8 @@ export function Provider({ setup, children }: ProviderProps): JSX.Element {
     const layer = currentLayer.current;
 
     const provide = layer.provide.bind(layer);
-    const getOr = layer.getOr.bind(layer);
-    const get = layer.get.bind(layer);
+    const getOr = parentLayer.getOr.bind(layer);
+    const get = parentLayer.get.bind(layer);
 
     setup({ provide, getOr, get });
   }, [setup]);
