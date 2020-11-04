@@ -14,8 +14,8 @@ The `Provider` component has a setup function with a couple of useful methods:
 
 Creating a layer looks like so:
 
-```
-<Provider setup={({ }) => {
+```ts
+<Provider setup={({ get, provide }) => {
 
   const myDep = get(MyDep);
   const myClass = get(MyClass);
@@ -31,7 +31,7 @@ Now that we've created a layer and provided the `MyOtherClass` dependency, it ca
 
 It'll look something like this:
 
-```
+```ts
 function ChildComponent() {
   const myOtherClass = useDep(MyOtherClass);
 
